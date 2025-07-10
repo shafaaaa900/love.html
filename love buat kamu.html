@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Bentuk HTML</title>
+  <style>
+    body {
+      background-color: #ffe6e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .heart {
+      position: relative;
+      width: 100px;
+      height: 90px;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 90px;
+      background: red;
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+
+    .heart::after {
+      left: 50px;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+    h1 {
+      position: absolute;
+      top: 200px;
+      color: #b30000;
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart"></div>
+  <h1>Love untuk Kamu 💖</h1>
+</body>
+</html>
+
